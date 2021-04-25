@@ -13,6 +13,14 @@ body {
   margin-top: 4rem;
 }
 
+#close-btn {
+  height: 1.5rem;
+  width: 1.5rem;
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+}
+
 span {
   color: black;
 }
@@ -76,5 +84,51 @@ p {
   body {
     margin-left: 30rem;
     margin-right: 30rem;
+  }
+}
+
+#opened-citation {
+  line-height: 1.3rem;
+  font-size: 0.8rem;
+}
+
+#bottomsheet {
+  z-index: 200;
+  position: fixed;
+  left: 0;
+  /* display: none; */
+  bottom: 0;
+  background-color: floralwhite;
+  border-radius: 15px 15px 0px 0px;
+  padding: 1.5rem;
+}
+
+.bottomsheet-summon-div {
+  display: block;
+  animation: 600ms ease summon-sheet;
+}
+
+@keyframes summon-sheet {
+  from {
+    transform: translateY(+100vw);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.bottomsheet-hide-div {
+  display: none;
+  animation: 600ms ease hide-sheet;
+}
+
+@keyframes hide-sheet {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(100vw);
   }
 }
