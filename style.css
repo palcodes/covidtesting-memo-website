@@ -78,6 +78,24 @@ p {
     margin-left: 30rem;
     margin-right: 30rem;
   }
+  p {
+    margin-right: 2rem;
+  }
+  p.empty-cit {
+    width: 26vw;
+  }
+  p.right-cit {
+    margin-right: 0px;
+    width: 20vw;
+    font-size: 0.7rem;
+  }
+  .left {
+    display: flex;
+  }
+  .col {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 span.close-btn {
@@ -97,7 +115,7 @@ span.close-btn {
   margin-right: 4rem;
 }
 
-a{
+a {
   color: #0645ad;
 }
 
