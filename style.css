@@ -97,6 +97,10 @@ span.close-btn {
   margin-right: 4rem;
 }
 
+a{
+  color: #0645ad;
+}
+
 #bottomsheet {
   z-index: 200;
   position: fixed;
