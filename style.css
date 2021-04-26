@@ -1,10 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Tinos&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 body {
-  font-family: "Open Sans";
-  margin-left: 1.6rem;
-  margin-right: 1.6rem;
+  font-family: "Tinos";
+  margin: 40px auto;
+  max-width: 700px;
+  display: block;
+  padding: 0 15px;
+  line-height: 1.6;
 }
 
 #video {
@@ -19,29 +21,28 @@ span {
 }
 
 h1 {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.8rem;
   color: #2b2b2b;
-  font-family: "Tinos";
   text-align: center;
   margin-top: 2rem;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 h2 {
-  font-size: 0.9rem;
+  font-size: 1.6rem;
   color: #3a3a3a;
   font-weight: 700;
-  margin-top: 2.2rem;
+  margin-top: 2.4rem;
+  line-height: 1.2;
 }
 
 h4 {
   margin-top: 4rem;
   margin-bottom: 2rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  font-style: italic;
   color: #2b2b2b;
   font-weight: 500;
-  line-height: 1.6rem;
 }
 
 h6 {
@@ -51,33 +52,18 @@ h6 {
   color: #2b2b2b;
   font-style: italic;
   font-weight: 500;
-  line-height: 1.6rem;
 }
 
 p {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: #2b2b2b;
   font-weight: 400;
-  line-height: 1.6rem;
 }
 
 @media screen and (min-width: 680px) {
-  body {
-    margin-left: 10rem;
-    margin-right: 10rem;
-  }
-
-  h2 {
-    font-size: 1.4rem;
-    line-height: 0.8rem;
-  }
 }
 
 @media screen and (min-width: 1440px) {
-  body {
-    margin-left: 30rem;
-    margin-right: 30rem;
-  }
 }
 
 span.close-btn {
@@ -90,14 +76,13 @@ span.close-btn {
 }
 
 #opened-citation {
-  line-height: 1.4rem;
   color: #2b2b2b;
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-right: 4rem;
 }
 
-a{
+a {
   color: #0645ad;
 }
 
