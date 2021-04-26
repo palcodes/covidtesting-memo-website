@@ -90,9 +90,9 @@ span.close-btn {
 }
 
 #opened-citation {
-  line-height: 1.3rem;
+  line-height: 1.4rem;
   font-size: 0.8rem;
-  margin-right: 2.8rem;
+  margin-right: 4rem;
 }
 
 #bottomsheet {
@@ -100,7 +100,6 @@ span.close-btn {
   position: fixed;
   width: 100%;
   left: 0;
-  /* display: none; */
   bottom: 0;
   background-color: floralwhite;
   border-radius: 15px 15px 0px 0px;
