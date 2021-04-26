@@ -91,6 +91,8 @@ span.close-btn {
 
 #opened-citation {
   line-height: 1.4rem;
+  color: #2b2b2b;
+  font-weight: 400;
   font-size: 0.8rem;
   margin-right: 4rem;
 }
@@ -101,13 +103,13 @@ span.close-btn {
   width: 100%;
   left: 0;
   bottom: 0;
+  display: none;
   background-color: floralwhite;
   border-radius: 15px 15px 0px 0px;
   padding: 1.5rem;
 }
 
 .bottomsheet-summon-div {
-  display: block;
   animation: 600ms ease summon-sheet;
 }
 
@@ -122,7 +124,6 @@ span.close-btn {
 }
 
 .bottomsheet-hide-div {
-  display: none;
   animation: 600ms ease hide-sheet;
 }
 

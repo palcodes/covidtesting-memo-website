@@ -141,6 +141,7 @@ window.addEventListener("load", () => {
 function showBottomSheet() {
   bottomsheet.classList.add("bottomsheet-summon-div");
   bottomsheet.classList.remove("bottomsheet-hide-div");
+  bottomsheet.style.display = "block";
 }
 
 closebtn.addEventListener("click", () => {
@@ -150,4 +151,7 @@ closebtn.addEventListener("click", () => {
 function hideBottomsheet() {
   bottomsheet.classList.add("bottomsheet-hide-div");
   bottomsheet.classList.remove("bottomsheet-summon-div");
+  setTimeout(() => {
+    bottomsheet.style.display = "none";
+  }, 500);
 }
