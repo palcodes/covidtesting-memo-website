@@ -13,6 +13,61 @@ label {
   color: #0645ad;
 }
 
+label.contact {
+  color: #2b2b2b;
+  margin-bottom: 0.2rem;
+  margin-top: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.74;
+}
+
+#contact-body {
+  border: lightgray solid 2px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 2rem;
+  top: 20rem;
+  padding: 1.2rem;
+  border-radius: 0.25rem;
+}
+
+#submit-btn {
+  margin-top: 1.4rem;
+  background-color: #2b2b2b;
+  color: ghostwhite;
+  font-family: "Tinos";
+  padding: 0.28rem;
+  border: 0;
+  border-radius: 0.2rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.8;
+  line-height: 1.2;
+}
+
+#share-body {
+  display: flex;
+  flex-direction: column;
+  padding: 0.2rem;
+  position: fixed;
+  left: 2rem;
+  top: 35rem;
+}
+
+.share-buttons {
+  margin-right: 0.6rem;
+}
+
+#share-row {
+  display: flex;
+}
+
+.input {
+  font-family: "Tinos";
+  font-size: 0.9rem;
+  padding: 0.2rem;
+}
+
 #video {
   height: 12rem;
   width: 20rem;
