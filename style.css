@@ -71,7 +71,7 @@ p {
   font-weight: 400;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1440px) {
   body {
     font-family: "Tinos";
     margin: 40px auto;
