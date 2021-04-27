@@ -10,13 +10,62 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <script src="./widgets.js"></script>
     <script defer src="./main.js"></script>
   </head>
   <body>
-    <h1>
+    <div id="contact-body">
+      <label class="contact" for="type">What brings you here?</label>
+      <select class="input" id="type" name="cars">
+        <option value="volvo">
+          You are an organization looking to deploy large-scale testing
+        </option>
+        <option value="saab">
+          You are an organization willing to help us fund this initiative
+        </option>
+        <option value="fiat">
+          A public organization willing to participate
+        </option>
+        <option value="audi">
+          An individual who wants to acquire anti-gen testing kit
+        </option>
+      </select>
+      <label class="contact" for="email">Enter your email address</label>
+      <input
+        class="input"
+        type="email"
+        name="email-address"
+        placeholder="name@email.com"
+        id="email"
+      />
+      <input id="submit-btn" type="button" value="Submit" />
+    </div>
+    <div id="share-body">
+      <p style="font-weight: 700; letter-spacing: 0.75">Share this website</p>
+      <div id="share-row">
+        <iframe
+          src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Ffrosty-hoover-71d955.netlify.app%2F&layout=button&size=large&width=77&height=28&appId"
+          width="77"
+          height="28"
+          style="border: none; overflow: hidden"
+          scrolling="no"
+          frameborder="0"
+          allowfullscreen="true"
+          class="share-buttons"
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+        ></iframe>
+        <a
+          data-size="large"
+          class="twitter-share-button share-buttons"
+          href="https://twitter.com/intent/tweet?text=test20%everyone20%.in20%is20%a20%great20%source20%"
+          >Tweet</a
+        >
+      </div>
+    </div>
+    <h2>
       Universal At-Home Testing for <strong>COVID-19</strong> in India To
       Prevent Lockdowns
-    </h1>
+    </h2>
     <div style="display: flex; flex-direction: row; justify-content: center">
       <div id="video"></div>
       <div style="display: none"></div>
@@ -93,7 +142,10 @@
       >. The state has ramped up its testing count in the last week or two, and
       is currently testing some 2 lakh samples per day across the state; it has
       also lowered the maximum cost of a COVID test to Rs. 500 or Rs. 800 (for a
-      home visit)<label class="margin-toggle sidenote-number cit" for="sn-3"></label
+      home visit)<label
+        class="margin-toggle sidenote-number cit"
+        for="sn-3"
+      ></label
       ><input type="checkbox" class="margin-toggle" id="sn-3" />
       <span class="sidenote">
         'Maharashtra Records 56,286 new COVID cases,'New Indian Express, 9 April
@@ -151,9 +203,9 @@
       <label class="margin-toggle sidenote-number cit" for="sn-7"></label
       ><input type="checkbox" class="margin-toggle" id="sn-7" />
       <span class="sidenote"
-        >[7] For example, see Pieter Libin et. al., “Assessing the feasibility
-        and effectiveness of household-pooled universal testing to control
-        COVID-19 epidemics,” PLOS Computational Biology, 9 March 2021:
+        >For example, see Pieter Libin et. al., “Assessing the feasibility and
+        effectiveness of household-pooled universal testing to control COVID-19
+        epidemics,” PLOS Computational Biology, 9 March 2021:
         <a
           href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008688"
           >https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008688</a
@@ -401,25 +453,25 @@
     <h2>The Proposal</h2>
     <p>
       We are happy to put together a team to run a large-scale trial of using
-      at-home rapid testing in India to reduce <strong>COVID-19</strong> spread.
-      I believe that we could reduce the daily incidence of new
-      <strong>COVID-19</strong> cases in Mumbai by more than 50% in just three
-      weeks by testing 2 million people/day using rapid paper-strip tests
-      distributed directly to peoples’ homes. We could conduct an initial test
-      in a smaller area, perhaps covering 1-2 lakh people, and compare the
-      incidence of <strong>COVID-19</strong> in that area to a similar area
-      where the intervention has not occured (this could even be published as a
-      study if desired). This is not likely to cost more than a few crore INR
-      total. If this is satisfactory, the program could be rolled out citywide
-      and even nationally very rapidly. While running this might cost on the
-      order of a few crore INR daily across each large city, the economic losses
-      avoided by businesses and the state (via tax revenue) would be orders of
-      magnitude higher. Assuming the projection that the state of Maharashtra
-      will lose 40,000 crores every month of lockdown is correct, and assuming
-      testing the entire state costs as much as 20 crores a day, the total cost
-      of testing per month will come out to 600 crores; if a lockdown can
-      avoided with such testing, the regimen would pay for itself close to 70
-      times over.
+      at-home rapid testing in India to reduce
+      <strong>COVID-19</strong> spread. I believe that we could reduce the daily
+      incidence of new <strong>COVID-19</strong> cases in Mumbai by more than
+      50% in just three weeks by testing 2 million people/day using rapid
+      paper-strip tests distributed directly to peoples’ homes. We could conduct
+      an initial test in a smaller area, perhaps covering 1-2 lakh people, and
+      compare the incidence of <strong>COVID-19</strong> in that area to a
+      similar area where the intervention has not occured (this could even be
+      published as a study if desired). This is not likely to cost more than a
+      few crore INR total. If this is satisfactory, the program could be rolled
+      out citywide and even nationally very rapidly. While running this might
+      cost on the order of a few crore INR daily across each large city, the
+      economic losses avoided by businesses and the state (via tax revenue)
+      would be orders of magnitude higher. Assuming the projection that the
+      state of Maharashtra will lose 40,000 crores every month of lockdown is
+      correct, and assuming testing the entire state costs as much as 20 crores
+      a day, the total cost of testing per month will come out to 600 crores; if
+      a lockdown can avoided with such testing, the regimen would pay for itself
+      close to 70 times over.
     </p>
     <hr class="custom" />
     <h4 class="footer-note">
@@ -438,13 +490,13 @@
       Feel free to email Soham Sankaran with any questions at
       <a href="mailto:soham@pashi.com">soham@pashi.com</a>.
     </h4>
-    <div id="bottomsheet" class="bottomsht bottomsheet-hide-div">
+    <!-- <div id="bottomsheet" class="bottomsht bottomsheet-hide-div">
       <div id="close-btn">
         <span alt="X" id="hide-bottomsheet" class="close-btn material-icons"
           >close</span
         >
       </div>
       <div id="opened-citation"></div>
-    </div>
+    </div> -->
   </body>
 </html>
