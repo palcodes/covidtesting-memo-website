@@ -9,8 +9,8 @@ body {
   line-height: 1.6;
 }
 
-hr {
-  border: 1px solid lightgrey;
+label {
+  color: #0645ad;
 }
 
 #video {
@@ -21,7 +21,7 @@ hr {
 }
 
 span {
-  color: #0645ad;
+  color: #3a3a3a;
 }
 
 h1 {
@@ -29,7 +29,10 @@ h1 {
   color: #2b2b2b;
   text-align: center;
   margin-top: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
   font-weight: 700;
+  line-height: 1.2;
 }
 
 h2 {
@@ -68,11 +71,21 @@ p {
   font-weight: 400;
 }
 
-@media screen and (min-width: 680px) {
+@media screen and (max-width: 1200px) {
+  body {
+    font-family: "Tinos";
+    margin: 40px auto;
+    max-width: 700px;
+    display: block;
+    padding: 0 15px;
+    line-height: 1.6;
+  }
+  .sidenote {
+    display: none;
+    font-size: 1.1rem;
+  }
 }
 
-@media screen and (min-width: 1440px) {
-}
 
 span.close-btn {
   height: 1.5rem;
@@ -133,4 +146,8 @@ a {
   to {
     transform: translateY(100vw);
   }
+}
+
+hr.custom {
+  border: 1px solid lightgrey;
 }
