@@ -203,5 +203,7 @@ a {
 }
 
 hr.custom {
-  border: 1px solid lightgrey;
+  border-color: #3a3a3a;
+  height: 1px;
+  width: 100%;
 }
