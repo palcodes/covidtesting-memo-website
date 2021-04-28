@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lusitana:wght@400;700&display=swap");
 
 body {
-  font-family: "Tinos";
+  font-family: "IBM Plex Serif";
   margin: 40px auto;
   max-width: 700px;
   display: block;
@@ -13,8 +13,8 @@ label.contact {
   color: #2b2b2b;
   margin-bottom: 0.2rem;
   margin-top: 0.6rem;
-  font-weight: 700;
-  letter-spacing: 0.74;
+  font-weight: 500;
+  letter-spacing: 0.5;
 }
 
 #share-custom-btn {
@@ -57,6 +57,7 @@ label.contact {
 h2.title {
   text-align: center;
   font-size: 1.2rem;
+  font-family: "Lusitana", serif;
 }
 
 #share-body {
@@ -70,7 +71,6 @@ h2.title {
 
 a.section-header-link {
   text-decoration-color: white !important;
-  font-style: italic;
   font-size: 1.2rem;
   text-decoration: none !important;
   line-height: 1.8;
@@ -101,9 +101,6 @@ a.section-header-link {
 }
 
 #video {
-  height: 12rem;
-  width: 20rem;
-  background-color: whitesmoke;
   margin-top: 4rem;
 }
 
@@ -112,7 +109,8 @@ span {
 }
 
 h1 {
-  font-size: 1.8rem;
+  font-family: "Lusitana", serif;
+  font-size: 2.8rem;
   color: #2b2b2b;
   text-align: center;
   font-weight: 700;
@@ -127,12 +125,13 @@ h2 {
 }
 
 h4 {
+  font-family: "Lusitana", serif;
   margin-top: 4rem;
   margin-bottom: 2rem;
   font-size: 1rem;
   font-style: italic;
   color: #2b2b2b;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 h4.footer-note {
@@ -221,9 +220,15 @@ hr.custom {
   width: 100%;
 }
 
+@media screen and (max-width: 600px) {
+  #yt-video {
+    width: 80vw;
+    height: 50vw;
+  }
+}
+
 @media screen and (max-width: 1440px) {
   body {
-    font-family: "Tinos";
     margin: 40px auto;
     max-width: 700px;
     display: block;
