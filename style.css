@@ -9,10 +9,6 @@ body {
   line-height: 1.6;
 }
 
-label {
-  color: #0645ad;
-}
-
 label.contact {
   color: #2b2b2b;
   margin-bottom: 0.2rem;
@@ -43,6 +39,10 @@ label.contact {
   font-size: 0.9rem;
   letter-spacing: 0.8;
   line-height: 1.2;
+}
+
+h2.title {
+  text-align: center;
 }
 
 #share-body {
