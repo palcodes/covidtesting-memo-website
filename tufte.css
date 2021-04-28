@@ -266,8 +266,8 @@ img {
 
 .sidenote:before {
   content: counter(sidenote-counter) " ";
-  font-size: 0.7rem;
-  top: -0.5rem;
+  font-size: 0.9rem;
+  top: -0.3rem;
 }
 
 blockquote .sidenote,
