@@ -229,11 +229,11 @@ img {
   margin-top: 0.2rem;
   margin-bottom: 1.4rem;
   font-size: 0.88rem;
-  line-height: 1.25;
+  line-height: 1.35;
   vertical-align: baseline;
   position: relative;
   padding: 0.7rem;
-  word-break: break-all;
+  word-wrap: break-word;
   border: lightgray solid 1px;
   border-radius: 0.4rem;
 }
