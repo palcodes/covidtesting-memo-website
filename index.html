@@ -14,56 +14,74 @@
     <script defer src="./main.js"></script>
   </head>
   <body>
-    <div id="contact-body">
-      <label class="contact" for="type">What brings you here?</label>
-      <select class="input" id="type" name="cars">
-        <option value="volvo">
-          You are an organization looking to deploy large-scale testing
-        </option>
-        <option value="saab">
-          You are an organization willing to help us fund this initiative
-        </option>
-        <option value="fiat">
-          A public organization willing to participate
-        </option>
-        <option value="audi">
-          An individual who wants to acquire anti-gen testing kit
-        </option>
-      </select>
-      <label class="contact" for="email">Enter your email address</label>
-      <input
-        class="input"
-        type="email"
-        name="email-address"
-        placeholder="name@email.com"
-        id="email"
-      />
-      <input id="submit-btn" type="button" value="Submit" />
-    </div>
-    <div id="share-body">
-      <p style="font-weight: 700; letter-spacing: 0.75">Share this website</p>
-      <div id="share-row">
-        <iframe
-          src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Ffrosty-hoover-71d955.netlify.app%2F&layout=button&size=large&width=77&height=28&appId"
-          width="77"
-          height="28"
-          style="border: none; overflow: hidden"
-          scrolling="no"
-          frameborder="0"
-          allowfullscreen="true"
-          class="share-buttons"
-          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-        ></iframe>
-        <a
-          href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-          class="twitter-share-button"
-          data-show-count="false"
-          data-size="large"
-          >Tweet</a
+    <div class="left">
+      <div id="content-body">
+        <h3>Contents</h3>
+        <a class="section-header-link" href="#summary">&bull; Summary</a>
+        <a class="section-header-link" href="#background">&bull; Background</a>
+        <a class="section-header-link" href="#covid-testing-in-maharashtra"
+          >&bull; Covid Testing in Maharashtra</a
         >
-        <button id="share-custom-btn">Share</button>
+        <a class="section-header-link" href="#universal-testing"
+          >&bull; Universal Testing using Rapid At-Home Tests</a
+        >
+        <a class="section-header-link" href="#a-note"
+          >&bull; A Note on Vaccines</a
+        >
+        <a class="section-header-link" href="#proposal">&bull; The Proposal</a>
+      </div>
+      <div id="contact-body">
+        <label class="contact" for="type">What brings you here?</label>
+        <select class="input" id="type" name="cars">
+          <option value="volvo">
+            You are an organization looking to deploy large-scale testing
+          </option>
+          <option value="saab">
+            You are an organization willing to help us fund this initiative
+          </option>
+          <option value="fiat">
+            A public organization willing to participate
+          </option>
+          <option value="audi">
+            An individual who wants to acquire anti-gen testing kit
+          </option>
+        </select>
+        <label class="contact" for="email">Enter your email address</label>
+        <input
+          class="input"
+          type="email"
+          name="email-address"
+          placeholder="name@email.com"
+          id="email"
+        />
+        <input id="submit-btn" type="button" value="Submit" />
+      </div>
+      <div id="share-body">
+        <p style="font-weight: 700; letter-spacing: 0.75">Share this website</p>
+        <div id="share-row">
+          <iframe
+            src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Ffrosty-hoover-71d955.netlify.app%2F&layout=button&size=large&width=77&height=28&appId"
+            width="77"
+            height="28"
+            style="border: none; overflow: hidden"
+            scrolling="no"
+            frameborder="0"
+            allowfullscreen="true"
+            class="share-buttons"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
+          <a
+            href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+            class="twitter-share-button"
+            data-show-count="false"
+            data-size="large"
+            >Tweet</a
+          >
+          <button id="share-custom-btn">Share</button>
+        </div>
       </div>
     </div>
+    <h1>testingeveryone.in</h1>
     <h2 class="title">
       Universal At-Home Testing for <strong>COVID-19</strong> in India To
       Prevent Lockdowns
@@ -84,7 +102,7 @@
       history of public health policy in India.
     </h4>
     <hr class="custom" />
-    <h2>Summary</h2>
+    <h2 id="summary">Summary</h2>
     <p>
       We propose that the <strong>Government of India</strong> deploy rapid,
       at-home paper-strip testing in major metropolitan areas such as Mumbai,
@@ -96,7 +114,7 @@
       crores of rupees per day per city, which is orders of magnitude cheaper
       and less disruptive than the economic cost of further lockdowns.
     </p>
-    <h2>Background</h2>
+    <h2 id="background">Background</h2>
     <p>
       The <strong>COVID-19</strong> pandemic in India is currently surging at
       critical levels, in particular in the state of Maharashtra. In the past
@@ -129,7 +147,7 @@
       >not to mention the human toll of the tens of millions of subsistence
       workers who might starve or be unable to feed their families as a result.
     </p>
-    <h2>COVID Testing in Maharashtra</h2>
+    <h2 id="covid-testing-in-maharashtra">COVID Testing in Maharashtra</h2>
     <p>
       Since the pandemic began, Maharashtra had COVID-tested slightly over 2
       crore samples in total, with Mumbai accounting for close to a quarter of
@@ -170,7 +188,7 @@
       many asymptomatic carriers of COVID are still going undetected, thus
       creating new COVID clusters and spreading the virus further in the state.
     </p>
-    <h2>Universal Testing using Rapid At-Home Tests</h2>
+    <h2 id="universal-testing">Universal Testing using Rapid At-Home Tests</h2>
     <p>
       Since April of 2020, a number of different epidemiologists and social
       scientists, including an author of this note
@@ -393,7 +411,7 @@
         ></span
       >.
     </p>
-    <h2>A Note on Vaccines</h2>
+    <h2 id="a-note">A Note on Vaccines</h2>
     <p>
       The distribution of <strong>COVID-19</strong> vaccines in phases
       throughout India offers a long-term solution to the
@@ -452,7 +470,7 @@
       <strong>COVID-19</strong> in order to prevent devastation of lives and
       livelihoods.
     </p>
-    <h2>The Proposal</h2>
+    <h2 id="proposal">The Proposal</h2>
     <p>
       We are happy to put together a team to run a large-scale trial of using
       at-home rapid testing in India to reduce

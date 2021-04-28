@@ -36,7 +36,7 @@ label.contact {
   flex-direction: column;
   position: fixed;
   left: 2rem;
-  top: 20rem;
+  top: 25rem;
   padding: 1.2rem;
   border-radius: 0.25rem;
 }
@@ -56,6 +56,7 @@ label.contact {
 
 h2.title {
   text-align: center;
+  font-size: 1.2rem;
 }
 
 #share-body {
@@ -64,7 +65,25 @@ h2.title {
   padding: 0.2rem;
   position: fixed;
   left: 2rem;
-  top: 35rem;
+  top: 40rem;
+}
+
+a.section-header-link {
+  text-decoration-color: white !important;
+  font-style: italic;
+  font-size: 1.2rem;
+  text-decoration: none !important;
+  line-height: 1.8;
+  color: #222222 !important;
+}
+
+#content-body {
+  display: flex;
+  flex-direction: column;
+  padding: 0.2rem;
+  position: fixed;
+  left: 2rem;
+  top: 4rem;
 }
 
 .share-buttons {
@@ -96,11 +115,7 @@ h1 {
   font-size: 1.8rem;
   color: #2b2b2b;
   text-align: center;
-  margin-top: 2rem;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
   font-weight: 700;
-  line-height: 1.2;
 }
 
 h2 {
@@ -137,21 +152,6 @@ p {
   font-size: 1.2rem;
   color: #2b2b2b;
   font-weight: 400;
-}
-
-@media screen and (max-width: 1440px) {
-  body {
-    font-family: "Tinos";
-    margin: 40px auto;
-    max-width: 700px;
-    display: block;
-    padding: 0 15px;
-    line-height: 1.6;
-  }
-  .sidenote {
-    display: none;
-    font-size: 1.1rem;
-  }
 }
 
 span.close-btn {
@@ -216,7 +216,25 @@ a {
 }
 
 hr.custom {
-  border-color: #3a3a3a;
+  border-color: #a3a3a3;
   height: 1px;
   width: 100%;
+}
+
+@media screen and (max-width: 1440px) {
+  body {
+    font-family: "Tinos";
+    margin: 40px auto;
+    max-width: 700px;
+    display: block;
+    padding: 0 15px;
+    line-height: 1.6;
+  }
+  .sidenote {
+    display: none;
+    font-size: 1.1rem;
+  }
+  .left {
+    display: none;
+  }
 }
