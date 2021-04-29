@@ -34,9 +34,9 @@ function hideBottomsheet() {
   }, 500);
 }
 
-document.addEventListener("click", () => {
-  hideBottomsheet();
-});
+// document.body.addEventListener("click", (e) => {
+//   hideBottomsheet();
+// });
 
 contactbtn.addEventListener("click", (e) => {
   bottomsheet.classList.add("bottomsheet-summon-div");
