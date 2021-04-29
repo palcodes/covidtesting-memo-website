@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lusitana:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body {
   font-family: "IBM Plex Serif";
@@ -103,7 +104,7 @@ span {
 }
 
 h1 {
-  font-family: "Lusitana", serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 2.8rem;
   color: #2c2c2e;
   text-align: center;

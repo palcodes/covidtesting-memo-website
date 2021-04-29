@@ -251,8 +251,7 @@ img {
 .sidenote-number:after {
   content: counter(sidenote-counter);
   font-size: 0.9rem;
-  top: -0.5rem;
-  left: 0.1rem;
+  top: -0.45rem;
   padding-left: 0.45rem;
   padding-right: 0.45rem;
   padding-top: 0.3rem;
@@ -417,11 +416,12 @@ label.margin-toggle:not(.sidenote-number) {
   .margin-toggle:checked + .sidenote,
   .margin-toggle:checked + .marginnote {
     display: block;
-    left: 0.4rem;
+    left: 0.85rem;
     clear: both;
     width: 95%;
     margin: 0.5rem 2.5%;
     position: relative;
+    background-color: floralwhite;
   }
 
   label {
