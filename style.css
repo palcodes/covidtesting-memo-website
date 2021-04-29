@@ -26,7 +26,6 @@ label.contact {
 #logo {
   height: 3rem;
   width: 3rem;
-  margin: 0.8rem;
 }
 
 .radios {
@@ -150,7 +149,7 @@ span {
 
 h1 {
   font-family: "PT Sans", sans-serif;
-  font-size: 2.6rem;
+  font-size: 3rem;
   color: #2c2c2e;
   text-align: center;
   font-weight: 700;
