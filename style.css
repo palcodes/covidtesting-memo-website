@@ -23,6 +23,12 @@ label.contact {
   letter-spacing: 0.5;
 }
 
+#logo {
+  height: 3rem;
+  width: 3rem;
+  margin: 0.8rem;
+}
+
 .radios {
   font-size: 0.76rem;
 }
@@ -299,6 +305,10 @@ hr.custom {
   #yt-video {
     width: 80vw;
     height: 50vw;
+  }
+  #logo {
+    width: 2rem;
+    height: 2rem;
   }
 }
 
