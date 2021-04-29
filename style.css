@@ -305,10 +305,6 @@ hr.custom {
     width: 80vw;
     height: 50vw;
   }
-  #logo {
-    width: 2rem;
-    height: 2rem;
-  }
 }
 
 @media screen and (max-width: 1740px) {
