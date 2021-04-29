@@ -49,7 +49,7 @@ closebtn.addEventListener("click", (e) => {
 let scrollFunc = () => {
   let y = window.scrollY;
 
-  if (y > 300 && screen.width > 1740) {
+  if (y > 300 && window.innerWidth > 1740) {
     leftpane.style.display = "block";
   } else {
     leftpane.style.display = "none";
