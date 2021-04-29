@@ -13,7 +13,6 @@ window.addEventListener("load", () => {
     for (let sharebtn of document.querySelectorAll(".share-custom-btn")) {
       sharebtn.style.display = "none";
     }
-    contactbtn.style.width = "100%";
   } else {
     for (let sharebtn of document.querySelectorAll(".share-custom-btn")) {
       sharebtn.style.display = "block";
