@@ -17,47 +17,19 @@
     <div class="left">
       <div id="content-body">
         <h3>Contents</h3>
-        <a class="section-header-link" href="#summary">&bull; Summary</a>
-        <a class="section-header-link" href="#background">&bull; Background</a>
+        <a class="section-header-link" href="#summary">Summary</a>
+        <a class="section-header-link" href="#background">Background</a>
         <a class="section-header-link" href="#covid-testing-in-maharashtra"
-          >&bull; Covid Testing in Maharashtra</a
+          >Covid Testing in Maharashtra</a
         >
         <a class="section-header-link" href="#universal-testing"
-          >&bull; Universal Testing using Rapid At-Home Tests</a
+          >Universal Testing using Rapid At-Home Tests</a
         >
-        <a class="section-header-link" href="#a-note"
-          >&bull; A Note on Vaccines</a
-        >
-        <a class="section-header-link" href="#proposal">&bull; The Proposal</a>
-      </div>
-      <div id="contact-body">
-        <label class="contact" for="type">What brings you here?</label>
-        <select class="input" id="type" name="cars">
-          <option value="volvo">
-            You are an organization looking to deploy large-scale testing
-          </option>
-          <option value="saab">
-            You are an organization willing to help us fund this initiative
-          </option>
-          <option value="fiat">
-            A public organization willing to participate
-          </option>
-          <option value="audi">
-            An individual who wants to acquire anti-gen testing kit
-          </option>
-        </select>
-        <label class="contact" for="email">Enter your email address</label>
-        <input
-          class="input"
-          type="email"
-          name="email-address"
-          placeholder="name@email.com"
-          id="email"
-        />
-        <input id="submit-btn" type="button" value="Submit" />
+        <a class="section-header-link" href="#a-note">A Note on Vaccines</a>
+        <a class="section-header-link" href="#proposal">The Proposal</a>
       </div>
       <div id="share-body">
-        <p style="font-weight: 700; letter-spacing: 0.75">Share this website</p>
+        <h3>Share this website</h3>
         <div id="share-row">
           <iframe
             src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Ffrosty-hoover-71d955.netlify.app%2F&layout=button&size=large&width=77&height=28&appId"
@@ -79,6 +51,70 @@
           >
           <button id="share-custom-btn">Share</button>
         </div>
+      </div>
+      <div id="contact-body">
+        <h3>Contact Us</h3>
+        <label class="contact">What brings you here?</label>
+        <div style="display: flex">
+          <input
+            class="input-radio"
+            type="radio"
+            name="deploy"
+            value="You are an organization looking to deploy large-scale testing"
+            id="org-deploy"
+          />
+          <label class="radios" for="org-deploy"
+            >You are an organization looking to deploy large-scale
+            testing</label
+          >
+        </div>
+        <div style="display: flex">
+          <input
+            class="input-radio"
+            type="radio"
+            name="fund"
+            value="You are an organization willing to help us fund this initiative"
+            id="org-fund"
+          />
+          <label class="radios" for="org-fund"
+            >You are an organization willing to help us fund this
+            initiative</label
+          >
+        </div>
+        <div style="display: flex">
+          <input
+            class="input-radio"
+            type="radio"
+            name="deploy"
+            value="You are a public organization willing to participate"
+            id="org-public"
+          />
+          <label class="radios" for="org-public"
+            >You are a public organization willing to participate</label
+          >
+        </div>
+        <div style="display: flex">
+          <input
+            class="input-radio"
+            type="radio"
+            name="deploy"
+            value="You are an individual who wants to acquire anti-gen testing kit"
+            id="individual"
+          />
+          <label class="radios" for="individual"
+            >You are an individual who wants to acquire anti-gen testing
+            kit</label
+          >
+        </div>
+        <label class="contact" for="email">Enter your email address</label>
+        <input
+          class="input"
+          type="email"
+          name="email-address"
+          placeholder="name@email.com"
+          id="email"
+        />
+        <input id="submit-btn" type="button" value="Submit" />
       </div>
     </div>
     <h1>Test Everyone</h1>
@@ -145,7 +181,10 @@
       40,000 crore every single month of strict lockdown, or more than 1300
       crores per day, an amount large enough to not only gravely harm many of
       Maharashtra’s key industries but also have a measurable impact on the
-      economy of India as a whole<label class="margin-toggle sidenote-number cit" for="sn-1"></label
+      economy of India as a whole<label
+        class="margin-toggle sidenote-number cit"
+        for="sn-1"
+      ></label
       ><input type="checkbox" class="margin-toggle" id="sn-1" />
       <span class="sidenote">
         Mudit Kapoor, “Rs. 40,000 Crore: Cost of Maharashtra Lockdown,” Business
@@ -153,7 +192,9 @@
         <a
           href="https://www.businesstoday.in/current/graphics/rs-40000-crore-cost-of-maharashtra-lockdown/story/436118"
           >https://www.businesstoday.in/current/graphics/rs-40000-crore-cost-of-maharashtra-lockdown/story/436118</a
-        > </span>  not to mention the human toll of the tens of millions of subsistence
+        >
+      </span>
+      not to mention the human toll of the tens of millions of subsistence
       workers who might starve or be unable to feed their families as a result.
     </p>
     <h2 id="covid-testing-in-maharashtra">COVID Testing in Maharashtra</h2>
@@ -288,7 +329,7 @@
         testing program. The government could quickly bring the cost down by
         rapidly increasing manufacturing capacity in order to unlock significant
         economies of scale.</span
-        >&nbspper administration, while RT-PCR tests cost at least Rs. 200 per
+      >&nbspper administration, while RT-PCR tests cost at least Rs. 200 per
       administration, so 10x as many tests can be administered for the same
       amount of money, which does indeed come out to 2.5 million given the 2.5
       lakh RT-PCR tests being administered daily in Mumbai. This would cost
