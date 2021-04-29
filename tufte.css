@@ -232,6 +232,8 @@ img {
   vertical-align: baseline;
   position: relative;
   padding: 0.7rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   word-wrap: break-word;
   border: lightgray solid 1px;
   border-radius: 0.4rem;
