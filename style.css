@@ -11,8 +11,8 @@ body {
 }
 
 #yt-video {
-  width: 60vw;
-  height: 35vw;
+  width: 55vw;
+  height: 32vw;
 }
 
 label.contact {
@@ -35,7 +35,7 @@ label.contact {
   letter-spacing: 0.5;
   font-weight: 600;
   color: whitesmoke;
-  margin-left: 1.2rem;
+  margin-left: 0.7rem;
   border: 0;
   border-radius: 0.25rem;
 }
@@ -71,6 +71,13 @@ label.contact {
   top: 24rem;
 }
 
+#share-body-video {
+  display: flex;
+  flex-direction: column;
+  padding: 0.2rem;
+  align-items: center;
+}
+
 a.section-header-link {
   text-decoration-color: #77aafd;
   text-decoration-thickness: 0.15rem;
@@ -94,6 +101,7 @@ a.section-header-link {
 
 #share-row {
   display: flex;
+  justify-content: center;
 }
 
 .input {
@@ -112,7 +120,7 @@ a.section-header-link {
 }
 
 #video {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 span {
