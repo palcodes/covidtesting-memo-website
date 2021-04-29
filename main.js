@@ -34,6 +34,10 @@ function hideBottomsheet() {
   }, 500);
 }
 
+document.addEventListener("click", () => {
+  hideBottomsheet();
+});
+
 contactbtn.addEventListener("click", (e) => {
   bottomsheet.classList.add("bottomsheet-summon-div");
   bottomsheet.classList.remove("bottomsheet-hide-div");
@@ -48,7 +52,7 @@ closebtn.addEventListener("click", (e) => {
 let scrollFunc = () => {
   let y = window.scrollY;
 
-  if (y > 700 && screen.width > 1440) {
+  if (y > 700 && screen.width > 1740) {
     leftpane.style.display = "block";
   } else {
     leftpane.style.display = "none";

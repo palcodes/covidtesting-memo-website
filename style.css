@@ -295,3 +295,9 @@ hr.custom {
     display: none;
   }
 }
+
+@media screen and (min-width: 1740px) {
+  #fab-bar {
+    display: none;
+  }
+}
