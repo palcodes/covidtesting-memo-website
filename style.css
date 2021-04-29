@@ -98,8 +98,13 @@ a.section-header-link {
 
 .input {
   font-family: "PT Serif", serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   padding: 0.2rem;
+}
+
+#submit-btn {
+  font-family: "PT San", sans-serif;
+  letter-spacing: 0.2;
 }
 
 .input-radio {
