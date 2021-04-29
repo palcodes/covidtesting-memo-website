@@ -50,7 +50,7 @@ p.subtitle {
 }
 
 .numeral {
-  font-family: "Tinos";
+  font-family: "PT Serif";
 }
 
 .danger {
@@ -243,7 +243,7 @@ img {
 
 .sidenote-number:after,
 .sidenote:before {
-  font-family: "Tinos";
+  font-family: "PT Serif", serif;
   position: relative;
   vertical-align: baseline;
 }
@@ -263,7 +263,14 @@ img {
 .sidenote:before {
   content: counter(sidenote-counter) " ";
   font-size: 0.9rem;
-  top: -0.3rem;
+  top: -0.35rem;
+  padding-left: 0.25rem;
+  padding-right: 0.10rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  border: #c4c4c4 solid 1px;
+  border-radius: 0.2rem;
+  margin-right: 0.2rem;
 }
 
 blockquote .sidenote,
@@ -280,11 +287,11 @@ table.fullwidth {
 
 div.table-wrapper {
   overflow-x: auto;
-  font-family: "Tinos", serif;
+  font-family: "PT Serif", serif;
 }
 
 .sans {
-  font-family: "Tinos", Calibri, sans-serif;
+  font-family: "PT Serif", Calibri, sans-serif;
   letter-spacing: 0.03em;
 }
 
