@@ -27,7 +27,7 @@ label.contact {
   font-size: 0.76rem;
 }
 
-#share-custom-btn {
+.share-custom-btn {
   background-color: #2c2c2e;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -101,7 +101,6 @@ a.section-header-link {
 
 #share-row {
   display: flex;
-  justify-content: center;
 }
 
 .input {
@@ -287,7 +286,7 @@ hr.custom {
   }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1740px) {
   body {
     margin: 40px auto;
     max-width: 700px;
@@ -300,6 +299,10 @@ hr.custom {
     font-size: 1.1rem;
   }
   .left {
+    display: none;
+  }
+
+  #share-body-video {
     display: none;
   }
 }

@@ -1,9 +1,7 @@
-const sharebtn = document.querySelector("#share-custom-btn");
 const leftpane = document.querySelector(".left");
 const contactbtn = document.querySelector("#contact-btn");
 const bottomsheet = document.querySelector("#bottomsheet");
 const closebtn = document.querySelector("#close-btn");
-const sharefabbtn = document.querySelector("#share-btn");
 
 const shareData = {
   url: "https://frosty-hoover-71d955.netlify.app/",
@@ -12,18 +10,18 @@ const shareData = {
 window.addEventListener("load", () => {
   // leftpane.style.display = "none";
   if (!navigator.share) {
-    sharebtn.style.display = "none";
-    sharefabbtn.style.display = "none";
+    for (let sharebtn of document.querySelectorAll(".share-custom-btn")) {
+      sharebtn.style.display = "none";
+    }
     contactbtn.style.width = "100%";
+  } else {
+    for (let sharebtn of document.querySelectorAll(".share-custom-btn")) {
+      sharebtn.style.display = "block";
+      sharebtn.addEventListener("click", async () => {
+        navigator.share(shareData);
+      });
+    }
   }
-});
-
-sharebtn.addEventListener("click", async () => {
-  navigator.share(shareData);
-});
-
-sharefabbtn.addEventListener("click", async () => {
-  navigator.share(shareData);
 });
 
 function hideBottomsheet() {
