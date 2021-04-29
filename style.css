@@ -137,8 +137,8 @@ h2 {
 
 h2.title {
   text-align: center;
-  font-size: 1.1rem;
-  line-height: 1.6rem;
+  font-size: 1.45rem;
+  line-height: 2rem;
   margin-top: 1.5rem;
   color: #3e3d41;
   font-weight: 200;
@@ -195,6 +195,12 @@ a {
   color: #0645ad;
 }
 
+#bottomsheet-form {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+}
+
 #bottomsheet {
   z-index: 200;
   position: fixed;
@@ -243,6 +249,27 @@ hr.custom {
 
 .left {
   display: none;
+}
+
+#fab-bar {
+  position: fixed;
+  z-index: 200;
+  bottom: 22;
+  right: 0;
+  left: 0;
+  width: 200px;
+  margin: auto;
+  display: flex;
+  justify-items: center;
+  border-radius: 20rem;
+  background-color: #222222;
+}
+
+@media screen and (min-width: 500px) {
+  #bottomsheet-form {
+    max-width: 60vw;
+    margin-left: 15vw;
+  }
 }
 
 @media screen and (max-width: 600px) {
