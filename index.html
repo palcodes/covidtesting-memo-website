@@ -12,6 +12,7 @@
     />
     <script defer src="./main.js"></script>
     <script src="./widgets.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
   </head>
   <body>
     <div class="left">
@@ -54,12 +55,13 @@
           <button class="share-custom-btn">Share</button>
         </div>
       </div>
-      <div id="contact-body">
+      <form id="contact-body">
         <h3>Contact Us</h3>
         <label class="contact">What brings you here?</label>
         <div style="display: flex">
           <input
-            class="input-radio"
+          checked
+            class="input-radio ir-1"
             type="radio"
             name="form1"
             value="You are an organization looking to deploy large-scale testing"
@@ -72,7 +74,7 @@
         </div>
         <div style="display: flex">
           <input
-            class="input-radio"
+            class="input-radio ir-1"
             type="radio"
             name="form1"
             value="You are an organization willing to help us fund this initiative"
@@ -85,7 +87,7 @@
         </div>
         <div style="display: flex">
           <input
-            class="input-radio"
+            class="input-radio ir-1"
             type="radio"
             name="form1"
             value="You are a public organization willing to participate"
@@ -97,7 +99,7 @@
         </div>
         <div style="display: flex">
           <input
-            class="input-radio"
+            class="input-radio ir-1"
             type="radio"
             name="form1"
             value="You are an individual who wants to acquire anti-gen testing kit"
@@ -115,10 +117,10 @@
           style="border-radius: 0.45rem; border: rgb(99, 99, 99) solid 2px;"
           name="email-address"
           placeholder="name@email.com"
-          id="email-tb"
+          id="email-1"
         />
-        <input class="submit-btn" style="border-radius: 0.45rem;" type="button" value="Submit" />
-      </div>
+        <input id="submit-btn-1" class="submit-btn" style="border-radius: 0.45rem;" type="button" value="Submit" />
+      </form>
     </div>
    <div style="display: flex; align-items: center; justify-content: center;"><img id="logo" src="./logo.png" alt="logo" style="
     transform: rotate(160deg);
@@ -647,12 +649,13 @@
           >close</span
         >
       </div>
-      <div id="bottomsheet-form">
+      <form id="bottomsheet-form">
         <h3 style="margin-top: 0;">Contact Us</h3>
         <label class="contact">What brings you here?</label>
         <div style="display: flex">
           <input
-            class="input-radio"
+          checked
+            class="input-radio ir-2"
             type="radio"
             name="form2"
             value="You are an organization looking to deploy large-scale testing"
@@ -665,7 +668,7 @@
         </div>
         <div style="display: flex">
           <input
-            class="input-radio"
+            class="input-radio ir-2"
             type="radio"
             name="form2"
             value="You are an organization willing to help us fund this initiative"
@@ -678,7 +681,7 @@
         </div>
         <div style="display: flex">
           <input
-            class="input-radio"
+            class="input-radio ir-2"
             type="radio"
             name="form2"
             value="You are a public organization willing to participate"
@@ -690,7 +693,7 @@
         </div>
         <div style="display: flex">
           <input
-            class="input-radio"
+            class="input-radio ir-2"
             type="radio"
             name="form2"
             value="You are an individual who wants to acquire anti-gen testing kit"
@@ -708,10 +711,10 @@
           name="email-address"
           style="border-radius: 0.45rem; border: rgb(99, 99, 99) solid 2px; width: 17rem;"
           placeholder="name@email.com"
-          id="email"
+          id="email-2"
         />
-        <input class="submit-btn" style="width: 17rem; border-radius: 0.5rem;" type="button" value="Submit" />
-      </div>
+        <input id="submit-btn-2" class="submit-btn" style="width: 17rem; border-radius: 0.5rem;" type="button" value="Submit" />
+      </form>
     </div>
   </body>
 </html>

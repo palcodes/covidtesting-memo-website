@@ -2,6 +2,72 @@ const leftpane = document.querySelector(".left");
 const contactbtn = document.querySelector("#contact-btn");
 const bottomsheet = document.querySelector("#bottomsheet");
 const closebtn = document.querySelector("#close-btn");
+const bodySubmit = document.querySelector("#submit-btn-1");
+const bsSubmit = document.querySelector("#submit-btn-2");
+const supabaseUrl = "https://lyliffbmhhvimuzgksoe.supabase.co";
+const supabaseKey =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYxOTI2Nzk4OSwiZXhwIjoxOTM0ODQzOTg5fQ.oa1UaK4R6_ibd1fMHNvK2rCZ-mJMlcDeW2lTnaRiflA";
+
+const { createClient } = supabase;
+supabase = createClient(supabaseUrl, supabaseKey);
+
+bodySubmit.addEventListener("click", async () => {
+  let email = document.querySelector("#email-1").value;
+  let option = "";
+  let time = new Date().toISOString();
+  for (let radios of document.querySelectorAll(".ir-1")) {
+    if (radios.checked) {
+      option = radios.value;
+    }
+  }
+  const { data, error } = await supabase.from("test-everyone").insert([
+    {
+      email: email,
+      reason: option,
+      createdon: time,
+    },
+  ]);
+  console.log(data, error);
+  bodySubmit.disabled = true;
+  bodySubmit.value = "Processing..";
+  bodySubmit.style.backgroundColor = "#000000";
+  setTimeout(() => {
+    bodySubmit.value = "Thank You";
+  }, 500);
+  setTimeout(() => {
+    bodySubmit.value = "Submit";
+    bodySubmit.disabled = false;
+  }, 5000);
+});
+
+bsSubmit.addEventListener("click", async () => {
+  let email = document.querySelector("#email-2").value;
+  let option = "";
+  let time = new Date().toISOString();
+  for (let radios of document.querySelectorAll(".ir-2")) {
+    if (radios.checked) {
+      option = radios.value;
+    }
+  }
+  const { data, error } = await supabase.from("test-everyone").insert([
+    {
+      email: email,
+      reason: option,
+      createdon: time,
+    },
+  ]);
+  console.log(data, error);
+  bsSubmit.disabled = true;
+  bsSubmit.value = "Processing..";
+  bsSubmit.style.backgroundColor = "#000000";
+  setTimeout(() => {
+    bsSubmit.value = "Thank You";
+  }, 200);
+  setTimeout(() => {
+    hideBottomsheet();
+    bsSubmit.disabled = false;
+  }, 600);
+});
 
 const shareData = {
   url: "https://frosty-hoover-71d955.netlify.app/",
@@ -30,10 +96,6 @@ function hideBottomsheet() {
     bottomsheet.style.display = "none";
   }, 500);
 }
-
-// document.body.addEventListener("click", (e) => {
-//   hideBottomsheet();
-// });
 
 contactbtn.addEventListener("click", (e) => {
   bottomsheet.classList.add("bottomsheet-summon-div");
